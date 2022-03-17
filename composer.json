@@ -1,5 +1,5 @@
 {
-    "name": "erdmannfreunde/optimist-theme-bundle",
+    "name": "xirdion/optimist-theme-bundle",
     "description": "OPTIMIST Theme Bundle",
     "homepage": "https://erdmann-freunde.de/produkte/contao-themes/optimist/",
     "keywords":["contao", "erdmannfreunde", "optimist", "theme"],
@@ -16,14 +16,16 @@
         "homepage": "https://erdmann-freunde.de"
     },
     "require": {
-        "php": ">=7.1",
+        "php": "^8.0",
         "composer-plugin-api": "^1.1 || ^2.0",
-        "contao/manager-bundle": "^4.9",
+        "contao/manager-bundle": "^4.13",
         "erdmannfreunde/euf_nutshell": "^1.0",
         "erdmannfreunde/contao-grid-bundle": "^1.0",
         "erdmannfreunde/theme-toolbox": "^2.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-latest"
+        ,
         "contao/manager-plugin": "^2.7",
         "composer/composer": "^1.9"
     },
