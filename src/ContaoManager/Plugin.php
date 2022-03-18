@@ -15,11 +15,11 @@ class Plugin implements ExtensionPluginInterface
      *
      * @return array<string,mixed>
      */
-    public function getExtensionConfig($extensionName, array $extensionConfigs, ContainerBuilder $container)
+    public function getExtensionConfig($extensionName, array $extensionConfigs, ContainerBuilder $container): array
     {
         if ('contao' === $extensionName) {
-            foreach($extensionConfigs as $id=>$value) {
-                $extensionConfigs[$id]['localconfig'] = array_merge($extensionConfigs[$id]['localconfig'] ?? [], ['folderUrl' => true]);
+            foreach($extensionConfigs as $id => $value) {
+                $extensionConfigs[$id]['localconfig'] = array_merge($value['localconfig'] ?? [], ['folderUrl' => true]);
             }
         }
 

@@ -36,6 +36,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface
     /** @noinspection PhpUnused */
     public function installThemeFiles(PackageEvent $event)
     {
+        $package = null;
         $operation = $event->getOperation();
 
         if ($operation instanceof InstallOperation) {
